@@ -1,7 +1,9 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
 import Comment from './Comment';
+import BasicRoute from "./Router";
+import Calculator from "./Calculator";
+import EssayForm from "./EssayForm";
 const comment = {
   date: new Date(),
   text: 'I hope you enjoy learning React!',
@@ -12,11 +14,7 @@ const comment = {
 };
 function App() {
   return (
-    <Comment
-      date={comment.date}
-      text={comment.text}
-      author={comment.author}
-    />
+    <EssayForm/>
   );
 }
 
